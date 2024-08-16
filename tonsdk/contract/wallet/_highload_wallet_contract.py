@@ -149,7 +149,8 @@ class HighloadWalletV3Contract(HighloadWalletContractBase):
                     # payload_cell = recipient['payload']
                     pass
                 else:
-                    payload_cell.bits.write_bytes(recipient['payload'])
+                    # payload_cell.bits.write_bytes(recipient['payload'])
+                    pass
 
             order_header = Contract.create_internal_message_header(
                 Address(recipient['address']), decimal.Decimal(recipient['amount'])
