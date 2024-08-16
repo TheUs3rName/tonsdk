@@ -146,7 +146,8 @@ class HighloadWalletV3Contract(HighloadWalletContractBase):
                         payload_cell.bits.write_uint(0, 32)
                         payload_cell.bits.write_string(recipient['payload'])
                 elif hasattr(recipient['payload'], 'refs'):
-                    payload_cell = recipient['payload']
+                    # payload_cell = recipient['payload']
+                    pass
                 else:
                     payload_cell.bits.write_bytes(recipient['payload'])
 
